@@ -1,5 +1,19 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  if (word === null || word === undefined) {
+    return "Input cannot be null or undefined";
+  }
+  
+  word = word.toLowerCase();
+
+  for (let i = 0; 1< word.length/2; i++){
+      if(word[i] !== word[word.length - 1 - i]) {
+
+        return false;
+      }
+  }
+
+  return true;
 }
 
 /* 
